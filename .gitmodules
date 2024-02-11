@@ -1,3 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = git@github.com:Robby-cell/nvchad.git
+[submodule "nvchad"]
+	path = nvchad
+	url = git@github.com:Robby-cell/nvchad.git
