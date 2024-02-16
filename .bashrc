@@ -141,6 +141,9 @@ export PATH=$BUN_INSTALL/bin:$PATH
 #             unset -f __main
 # eval "$(starship init bash)"
 
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# brew install jandedobbeleer/oh-my-posh/oh-my-posh
+
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(oh-my-posh init bash)"
 
