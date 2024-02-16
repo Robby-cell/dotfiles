@@ -117,9 +117,6 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
-eval "$(starship init bash)"
-
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export WASMTIME_HOME="$HOME/.wasmtime"
@@ -129,16 +126,21 @@ export PATH="$WASMTIME_HOME/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
-eval 
-            __main() {
-                local major="${BASH_VERSINFO[0]}"
-                local minor="${BASH_VERSINFO[1]}"
+# eval 
+#             __main() {
+#                 local major="${BASH_VERSINFO[0]}"
+#                 local minor="${BASH_VERSINFO[1]}"
+#
+#                 if ((major > 4)) || { ((major == 4)) && ((minor >= 1)); }; then
+#                     source <(/usr/local/bin/starship init bash --print-full-init)
+#                 else
+#                     source /dev/stdin <<<"$(/usr/local/bin/starship init bash --print-full-init)"
+#                 fi
+#             }
+#             __main
+#             unset -f __main
+# eval "$(starship init bash)"
 
-                if ((major > 4)) || { ((major == 4)) && ((minor >= 1)); }; then
-                    source <(/usr/local/bin/starship init bash --print-full-init)
-                else
-                    source /dev/stdin <<<"$(/usr/local/bin/starship init bash --print-full-init)"
-                fi
-            }
-            __main
-            unset -f __main
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(oh-my-posh init bash)"
+
