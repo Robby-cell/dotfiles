@@ -147,3 +147,5 @@ export PATH=$BUN_INSTALL/bin:$PATH
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(oh-my-posh init bash)"
 
+export MODULAR_HOME="/home/robert/.modular"
+export PATH="/home/robert/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
