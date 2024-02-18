@@ -149,3 +149,6 @@ eval "$(oh-my-posh init bash)"
 
 export MODULAR_HOME="/home/robert/.modular"
 export PATH="/home/robert/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+
+export PATH="/usr/include/x86_64-linux-gnu:$PATH"
+export PATH="/usr/lib/x86_64-linux-gnu:$PATH"
