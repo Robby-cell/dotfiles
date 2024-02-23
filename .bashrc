@@ -149,4 +149,4 @@ eval "$(oh-my-posh init bash)"
 
 export MODULAR_HOME="/home/robert/.modular"
 export PATH="/home/robert/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
-
+export PATH="~/.zig:$PATH"
