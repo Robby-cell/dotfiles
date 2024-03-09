@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "cs" ]; then
+	rm ~/.dotfiles/.config/nvim
+	ln -s ~/.dotfiles/.config/nvimcs ~/.dotfiles/.config/nvim
+
+	rm ~/.cache/nvim
+	[ -d ~/.cache/nvimcs ] && ln -s ~/.cache/nvimcs ~/.cache/nvim
+
+	cd ~/.dotfiles && stow .
+elif [ "$1" == "n" ]; then
+	rm ~/.dotfiles/.config/nvim
+	ln -s ~/.dotfiles/.config/nvimn ~/.dotfiles/.config/nvim
+
+	rm ~/.cache/nvim
+	[ -d ~/.cache/nvimn ] && ln -s ~/.cache/nvimn ~/.cache/nvim
+
+	cd ~/.dotfiles && stow .
+fi
+
