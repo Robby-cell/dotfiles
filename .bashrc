@@ -150,3 +150,6 @@ eval "$(oh-my-posh init bash)"
 export MODULAR_HOME="/home/robert/.modular"
 export PATH="/home/robert/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 export PATH="~/.zig:$PATH"
+
+export VCPKG_ROOT=/home/robert/.vcpkg/vcpkg
+export PATH="$VCPKG_ROOT:$PATH"
