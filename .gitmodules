@@ -1,0 +1,12 @@
+[submodule ".config/.config/nvima"]
+	path = .config/.config/nvima
+	url = git@github.com:Robby-cell/nvchad.git
+[submodule ".config/.config/nvimb"]
+	path = .config/.config/nvimb
+	url = git@github.com:Robby-cell/nvim-config.git
+[submodule ".config/nvimb"]
+	path = .config/nvimb
+	url = git@github.com:Robby-cell/nvim-config.git
+[submodule ".config/nvima"]
+	path = .config/nvima
+	url = git@github.com:Robby-cell/nvchad.git
