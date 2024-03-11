@@ -153,3 +153,5 @@ export PATH="~/.zig:$PATH"
 
 export VCPKG_ROOT=/home/robert/.vcpkg/vcpkg
 export PATH="$VCPKG_ROOT:$PATH"
+
+export PATH="~/.bin:$PATH"
