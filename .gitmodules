@@ -10,3 +10,6 @@
 [submodule ".config/nvima"]
 	path = .config/nvima
 	url = git@github.com:Robby-cell/nvchad.git
+[submodule ".tmux"]
+	path = .tmux
+	url = https://github.com/tmux-plugins/tpm.git
