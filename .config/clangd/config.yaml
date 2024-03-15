@@ -1,0 +1,9 @@
+Diagnostics:
+  UnusedIncludes: Strict
+If:
+  PathMatch: /usr/include/.*
+Diagnostics:
+  Suppress: "*"
+CompileFlags:
+    Add: [-Wno-gnu-zero-variadic-macro-arguments,-Wall,-Wextra,-pedantic,-I/usr/include/c++/11,-I/usr/include/x86_64-linux-gnu/c++/11]
+    Remove: [-fdiagnostics-urls=always]
