@@ -144,17 +144,23 @@ export PATH=$BUN_INSTALL/bin:$PATH
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # brew install jandedobbeleer/oh-my-posh/oh-my-posh
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(oh-my-posh init bash)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(oh-my-posh init bash)"
 
-export MODULAR_HOME="/home/robert/.modular"
-export PATH="/home/robert/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+# export MODULAR_HOME="/home/robert/.modular"
+# export PATH="/home/robert/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+
+# FOR ZIGUP
 export PATH="~/.zig:$PATH"
 
+# VCPKG
 export VCPKG_ROOT=/home/robert/.vcpkg/vcpkg
 export PATH="$VCPKG_ROOT:$PATH"
 
+# PATH FOR MY BINARIES
 export PATH="~/.bin:$PATH"
+
+# SDKMAN
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
