@@ -46,6 +46,8 @@ fish_add_path "$HOME/snap/code/220/.local/share/zerobrew/prefix/bin"
 
 alias ll "eza -lh --git --group-directories-first -s extension --icons"
 
-zellij setup --generate-auto-start fish | source
-exit
+# zellij setup --generate-auto-start fish | source
+if status is-interactive; and not set -q ZELLIJ
+    exec zellij
+end
 
